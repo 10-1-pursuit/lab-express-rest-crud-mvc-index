@@ -1,13 +1,13 @@
+//DEP:
 const express = require('express')
 const app = express();
 
+const locationsController = require('./controllers/locationsController.js')
 
+//Routes:
+app.use('/locations', locationsController)
 
-app.get('/', (req, res) => {
-    res.status(200).send("Hello, world")
-});
-
-app.get("*", ( req, res) => {
+app.get("*", ( req, res) => {                 //wildcard route
     res.status(404).json({error: 'me no work'});
 });
 
