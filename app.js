@@ -19,6 +19,10 @@ app.use('/', planController);
 
 app.use('/', specialEventController);
 
+app.get('*', (req, res) => {
+    res.status(404).json({ error: 'DOES NOT EXIST' });
+  });
+
 
 
 
