@@ -11,10 +11,9 @@ locations.get("/people", (req, res) => {
   const peopleLocations = locationArr.map((location) => {
    
     const filteredPeople = personsArr.filter((person) => {
-     person.mainLocation === location.zip;
+      return  person.mainLocation === location.zip 
     });
-    console.log(filteredPeople)
-
+   
     return  {
         ...location,
         people: filteredPeople
