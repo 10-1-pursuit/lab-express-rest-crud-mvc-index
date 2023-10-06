@@ -1,6 +1,6 @@
 const express = require('express');
 const events = express.Router();
-const eventsArr = require('../models/eventsModel');
+const eventsArr = require('../models/special-event.model');
 
 
 

@@ -1,6 +1,6 @@
 const express = require('express');
 const machines = express.Router();
-const machinesArr = require('../models/machineModel.js');
+const machinesArr = require('../models/machine.model.js');
 
 
 
