@@ -11,7 +11,7 @@ const plansController = require('./controllers/planscontroller.js')
 //Routes:
 app.use('/locations', locationsController);
 app.use('/machines', machinesController);
-app.use('/events', eventsController);
+app.use('/special-events', eventsController);
 app.use('/persons', personsController); 
 app.use('/plans', plansController)
 
