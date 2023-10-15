@@ -5,3 +5,5 @@ personsArray = require("../models/persons.model.js");
 persons.get("/", (req, res) => {
     res.json(personsArray);
 })
+
+module.exports = persons;

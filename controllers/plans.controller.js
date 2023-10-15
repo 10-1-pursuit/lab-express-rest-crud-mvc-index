@@ -5,3 +5,5 @@ plansArray = require("../models/plans.model.js");
 plans.get("/", (req, res) => {
     res.json(plansArray);
 })
+
+module.exports = plans;

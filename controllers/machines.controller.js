@@ -5,3 +5,5 @@ machinesArray = require("../models/machines.model.js");
 machines.get("/", (req, res) => {
     res.json(machinesArray);
 })
+
+module.exports = machines
