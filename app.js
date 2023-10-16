@@ -7,14 +7,14 @@ const special_eventsController = require("./controllers/special-events.controlle
 const app = express();
 
 app.get("/", (req, res) => {
-    res.send("Hello World!");
+    res.send("Hello, world!");
 });
 
 app.use("/locations", locationsController)
 
-app.use("/people", personsController)
+app.use("/persons", personsController)
 
-app.use("/equipment", machinesController)
+app.use("/machines", machinesController)
 
 app.use("/plans", plansController)
 
