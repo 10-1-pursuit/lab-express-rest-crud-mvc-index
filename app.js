@@ -18,8 +18,10 @@ app.use("/equipment", machinesController)
 
 app.use("/plans", plansController)
 
-
 app.use("/special-events", special_eventsController)
 
+app.get("*", (req, res) => {
+    res.status(404).json({ error: "Sorry, no page found!" });
+});
 
 module.exports = app;
