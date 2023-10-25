@@ -1,12 +1,14 @@
-const express = require("express")
+const express = require("express");
 
-const Special_Events = express.Router()
-const specialEventArray = require("../models/special-event.model.js")
+const special_Events = express.Router();
+const specialEventArray = require("../models/special-event.model.js");
 
-Special_Events.get("/",(request, response)=>{
-    response.json(specialEventArray)
-})
+special_Events.get("/", (request, response) => {
+  response.json(specialEventArray);
+});
 
-
-
-module.exports = Special_Events
+special_Events.get("/:index", (request, response) => {
+  const { index } = request.params;
+  response.json(specialEventArray[index]);
+});
+module.exports = special_Events;

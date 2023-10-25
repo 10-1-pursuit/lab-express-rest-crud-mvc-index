@@ -7,8 +7,10 @@ locations.get("/", (request, response) => {
   response.json(locationsArray);
 });
 
-// locations.get("/:index", (request, response) => {
-//   const { index } = request.params;
-//   response.json(locationsArray[index]);
-// });
+locations.get("/:index", (request, response) => {
+  const { index } = request.params;
+  response.json(locationsArray[index]);
+
+});
+
 module.exports = locations;
