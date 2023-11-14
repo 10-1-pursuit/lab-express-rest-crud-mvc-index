@@ -1,9 +1,10 @@
-const express = require('express');
-const plans = express.Router();
-const plansArray = require('../models./plansModel.js');
+const express = require("express");
+const router = express.Router();
 
-person.get('/', (req,res)=>{
-    res.send(plansArray)
-})
+let plans = require("../models/plan.model");
 
-module.exports = plans
+router.get("/", (request, response) => {
+  response.json(plans);
+});
+
+module.exports = router;

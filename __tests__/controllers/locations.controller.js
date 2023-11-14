@@ -1,9 +1,10 @@
-const express = require('express');
-const locations = express.Router();
-const locationsArray = reqire('../models./locationModel.js');
+const express = require("express");
+const router = express.Router();
 
-locations.get('/', (req,res)=>{
-    res.send(locationsArray)
-})
+let locations = require("../models/location.model");
 
-module.exports = locations
+router.get("/", (request, response) => {
+  response.json(locations);
+});
+
+module.exports = router;
