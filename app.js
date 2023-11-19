@@ -8,6 +8,10 @@ app.use('/locations' , locationsController)
 const machineController = require('./controllers/machines.controller');
 app.use('/machines', machineController)
 
+const personController = require('./controllers/persons.controller');
+app.use('/persons', personController)
+
+
 
 
 //Routes 
