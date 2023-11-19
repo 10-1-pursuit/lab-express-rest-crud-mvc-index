@@ -5,6 +5,10 @@ const app = express()
 const locationsController = require('./controllers/locations.controller');
 app.use('/locations' , locationsController)
 
+const machineController = require('./controllers/machines.controller');
+app.use('/machines', machineController)
+
+
 
 //Routes 
 
