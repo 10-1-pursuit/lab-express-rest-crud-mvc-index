@@ -11,8 +11,12 @@ app.use('/machines', machineController)
 const personController = require('./controllers/persons.controller');
 app.use('/persons', personController)
 
-const plansConrtroller = require('./controllers/plans.controller');
+const plansController = require('./controllers/plans.controller');
 app.use('/plans', plansConrtroller) 
+
+const specialEventsController = require('./controllers/specialEvent.controller');
+app.use('/specialEvents', specialEventsController) 
+
 
 
 //Routes 
